@@ -35,4 +35,14 @@ An engaging, scoreboard-powered **Rock Paper Scissors** game built with **HTML5,
 └── script.js       # Round checking and scoring logic
 ```
 
-<!-- git commit -m 'Add some AmazingFeature' -->
+## 🚀 How to Run Locally
+
+### 1. Clone and Enter the Repository
+
+```bash
+git clone [https://github.com/amirsohail100/Rock-Paper-Scissors-Game.git](https://github.com/amirsohail100/Rock-Paper-Scissors-Game.git)
+cd Rock-Paper-Scissors-Game
+
+
+
+```
