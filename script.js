@@ -9,6 +9,21 @@ const choices = document.querySelectorAll(".choice");
 const userDisplayMove = document.querySelector("#user-display-move");
 const compDisplayMove = document.querySelector("#comp-display-move");
 const battleArena = document.querySelector(".battle-arena");
+const themeToggleBtn = document.querySelector("#theme-toggle");
+const bodyElement = document.body;
+
+// Theme Toggle Functionality
+themeToggleBtn.addEventListener("click", () => {
+    if (bodyElement.classList.contains("dark-mode")) {
+        bodyElement.classList.remove("dark-mode");
+        bodyElement.classList.add("light-mode");
+        themeToggleBtn.innerText = "🌙";
+    } else {
+        bodyElement.classList.remove("light-mode");
+        bodyElement.classList.add("dark-mode");
+        themeToggleBtn.innerText = "☀️";
+    }
+});
 
 const genCompChoice = ()=>{
     const arr = ["rock","paper","scissors"];
@@ -44,6 +59,7 @@ const showwin = (win,userChoice,compChoice)=>{
         userscorep.innerText = youScore;
         msg.innerText = `You Win! Your ${userChoice} beats ${compChoice}`
         msg.style.background = "linear-gradient(135deg, #166534, #22c55e)"
+        msg.style.color = "#ffffff"
         msg.style.boxShadow = "0 0 25px rgba(34, 197, 94, 0.6)"
         
         // Trigger Victory Confetti Particles Effect
@@ -59,6 +75,7 @@ const showwin = (win,userChoice,compChoice)=>{
         compScorep.innerText = compScore;
         msg.innerText = `You Lose. ${compChoice} beats your ${userChoice}`
         msg.style.background = "linear-gradient(135deg, #991b1b, #ef4444)"
+        msg.style.color = "#ffffff"
         msg.style.boxShadow = "0 0 25px rgba(239, 68, 68, 0.6)"
     }
 }
@@ -72,6 +89,7 @@ const playGame = (userChoice)=>{
 
         msg.innerText = "Game was Draw. Play again!"
         msg.style.background = "linear-gradient(135deg, #334155, #475569)"
+        msg.style.color = "#ffffff"
         msg.style.boxShadow = "0 0 25px rgba(100, 116, 139, 0.6)"
     }else{
         let youWin = true;
