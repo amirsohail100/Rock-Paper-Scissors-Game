@@ -3,35 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors Game</title>
+    <title>Rock Paper Scissors - 3D Edition</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Rock Paper Scissors Game</h1>
-    <div class="choices">
-        <div class="choice" id="rock">
-            <img src="rock.png" alt="rock-img">
-        </div>
-        <div class="choice" id="paper">
-            <img src="paper.png" alt="paper-img">
-        </div>
-        <div class="choice" id="scissors">
-            <img src="scissors.png" alt="scissors-img">
-        </div>
+    <!-- Background Floating Elements to fill empty spaces -->
+    <div class="floating-bg">
+        <div class="shape">✊</div>
+        <div class="shape">✋</div>
+        <div class="shape">✌️</div>
+        <div class="shape">✊</div>
+        <div class="shape">✋</div>
+        <div class="shape">✌️</div>
     </div>
-    <div class="score-boad">
-        <div class="score">
-            <p id="You-score">0</p>
-            <p>You</p>
+
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <main class="game-container">
+        <!-- Choices Section with 3D Depth -->
+        <div class="choices">
+            <div class="choice" id="rock" title="Rock">
+                <img src="rock.png" alt="rock-img">
+            </div>
+            <div class="choice" id="paper" title="Paper">
+                <img src="paper.png" alt="paper-img">
+            </div>
+            <div class="choice" id="scissors" title="Scissors">
+                <img src="scissors.png" alt="scissors-img">
+            </div>
         </div>
-        <div class="score">
-            <p id="Comp-score">0</p>
-            <p>Comp</p>
+
+        <!-- Scoreboard -->
+        <div class="score-boad">
+            <div class="score-card">
+                <p id="You-score">0</p>
+                <p class="score-label">You</p>
+            </div>
+            <div class="score-divider">:</div>
+            <div class="score-card">
+                <p id="Comp-score">0</p>
+                <p class="score-label">Comp</p>
+            </div>
         </div>
-    </div>
-    <div class="game-msg">
-        <p id="msg">Play your move</p>
-    </div>
+
+        <!-- Game Message Box -->
+        <div class="game-msg">
+            <p id="msg">Play your move</p>
+        </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
