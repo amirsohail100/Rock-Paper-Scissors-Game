@@ -9,7 +9,7 @@
     <!-- Confetti Library for Victory Particle Effects -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
-<body>
+<body class="dark-mode">
     <!-- Floating Background Animations -->
     <div class="floating-bg">
         <div class="shape">✊</div>
@@ -20,10 +20,14 @@
         <div class="shape">✌️</div>
     </div>
 
-    <!-- Stunning Glowing Header -->
+    <!-- Stunning Centered Header with Theme Toggle -->
     <header class="main-header">
-        <h1>Rock Paper Scissors</h1>
-        <p class="subtitle">Ultimate 3D Battle Arena</p>
+        <div class="header-content">
+            <h1>Rock Paper Scissors</h1>
+            <p class="subtitle">Ultimate 3D Battle Arena</p>
+        </div>
+        <!-- Light / Dark Mode Toggle Switch -->
+        <button id="theme-toggle" title="Switch Theme">☀️</button>
     </header>
 
     <main class="game-container">
@@ -40,7 +44,7 @@
             </div>
         </div>
 
-        <!-- Interactive Battle Display Area (Shows selected moves with animations) -->
+        <!-- Interactive Battle Display Area -->
         <div class="battle-arena">
             <div class="battle-box">
                 <span class="arena-title">You</span>
@@ -53,7 +57,7 @@
             </div>
         </div>
 
-        <!-- Game Message Box -->
+        <!-- Centered Game Message Box -->
         <div class="game-msg">
             <p id="msg">Make your move below!</p>
         </div>
