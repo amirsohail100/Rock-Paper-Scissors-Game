@@ -1,23 +1,24 @@
-# 🪨📄✂️ Rock Paper Scissors Game
+# 🪨📄✂️ 3D Interactive Rock Paper Scissors Game
 
-An engaging, scoreboard-powered **Rock Paper Scissors** game built with **HTML5, CSS3, and JavaScript**. Challenge the computer in real-time, keep track of your scores, and experience interactive gameplay.
+An engaging, scoreboard-powered **Rock Paper Scissors** game built with **HTML5, CSS3, and JavaScript**. Challenge the computer in real-time with an upgraded 3D glassmorphism user interface, interactive choice shake animations, and glowing status indicators.
 
 ---
 
 ## 🚀 Features
 
-- **Smart Computer Move:** Computer choices are generated randomly using JavaScript logic for a fair game.
-- **Real-time Scoreboard:** Live tracking of both the User's score and the Computer's score during the session.
-- **Visual Choice Feedback:** Highlights the player's choice and shows instantly who won the round.
-- **Clean Theme:** Minimalist buttons with clean click transitions and bright UI status colors.
+- **Smart Computer Move:** Computer choices are generated randomly using JavaScript logic for a fair game[cite: 11].
+- **Interactive Shake Animation:** Visual feedback on choice selection with a smooth tactile bounce and rotation effect.
+- **Real-time Scoreboard:** Live tracking of both the User's score and the Computer's score during the session[cite: 11].
+- **Glassmorphism & 3D Elements:** Modern frosted glass cards with deep shadows and floating ambient background shapes.
+- **Dynamic Status Gradients:** Glow effects and gradient color shifts based on game outcomes (Win, Loss, Draw).
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5:** Formatted the game choices and scoreboard widgets.
-- **CSS3:** Styled custom hand-emoji cards and dynamic status text.
-- **JavaScript (ES6):** Implemented comparative logic, random choice generator, and live score modifiers.
+- **HTML5:** Structured the game choices, scoreboard widgets, and background animation layers[cite: 11].
+- **CSS3:** Styled custom glass cards, 3D shadows, keyframe animations, and responsive layouts[cite: 11].
+- **JavaScript (ES6):** Implemented comparative logic, random choice generator, live score modifiers, and UI event triggers[cite: 11].
 
 ---
 
@@ -30,19 +31,7 @@ An engaging, scoreboard-powered **Rock Paper Scissors** game built with **HTML5,
 ## 📂 Project Structure
 
 ```text
-├── index.html      # Scoreboard and action buttons
-├── style.css       # Interactive animations and cards
-└── script.js       # Round checking and scoring logic
-```
-
-## 🚀 How to Run Locally
-
-### 1. Clone and Enter the Repository
-
-```bash
-git clone [https://github.com/amirsohail100/Rock-Paper-Scissors-Game.git](https://github.com/amirsohail100/Rock-Paper-Scissors-Game.git)
-cd Rock-Paper-Scissors-Game
-
-
-
+├── index.html      # Scoreboard, action buttons, and background effects
+├── style.css       # 3D interactive animations, glassmorphism, and styling
+└── script.js       # Round checking, scoring logic, and UI triggers
 ```
