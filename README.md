@@ -24,7 +24,7 @@ An engaging, scoreboard-powered **Rock Paper Scissors** game built with **HTML5,
 
 ## 📸 Demo
 
-![Game Preview](rps-preview.png)
+![Game Preview](assets/rps-preview.png)
 
 ---
 
